@@ -1,18 +1,13 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Part01 {
-
-
-
 	public static void main(String[] args) {
 		ArrayList tempLines = new ArrayList<String>();
 		ArrayList temp = new ArrayList<String>();
 		int validPass = 0;
 		try {
-			File input = new File("input/input.txt");
+			File input = new File("Day 04/input/input.txt");
 			Scanner scan = new Scanner(input).useDelimiter("\n\n");
 			while(scan.hasNextLine()) {
 				tempLines.add(scan.next());
